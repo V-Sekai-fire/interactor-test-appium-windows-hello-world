@@ -8,9 +8,11 @@ It is the smallest end-to-end check that a UI-automation server with the desktop
 
 ## Build and run
 
-With an `appium` server and its desktop driver running locally:
+The test drives the host's built-in calculator through a server on `localhost:4723`. Install the driver once, start the server, then run the test:
 
 ```sh
+appium driver install --source=npm appium-windows-driver
+appium
 npm install
 node test.js
 ```
